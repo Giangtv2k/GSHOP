@@ -1,0 +1,43 @@
+<%-- 
+    Document   : changePass
+    Created on : Jul 6, 2021, 6:09:53 PM
+    Author     : hp
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <marquee style="color:black; font-weight:bold"  scrollamount="8" behavior="alternate">
+        CHÀO MỪNG CÁC BẠN ĐẾN VỚI TRANG WEB GFASHION.COM!!!
+    </marquee>
+    <div id="templatemo_body_wrapper">
+        <div id="templatemo_wrapper">
+            <jsp:include page="../common/menu.jsp"></jsp:include>
+                <div class="templatemo_main">
+                <jsp:include page="../common/menu1.jsp"></jsp:include>
+                    <div id="content" class="float_r">
+                        <a href='HomeServlet'>Back to home</a>
+                        <form action="changPasswordController" method="POST" style="margin: auto">
+                        <div style="width: 300px; border: 2px solid blue; padding: 30px; margin: auto;background: white;text-align: center;margin-top: 100px">
+                            <p style="padding-bottom: 30px; color: blue; font-size: 30px">Đổi mật khẩu</p>
+                            Account:<input style="margin-bottom: 20px" type="text" readonly name="account" value="${sessionScope.user.account}"><br>
+                            Pass:<input style="margin-bottom: 20px" name="pass" type="text" value="<%=(request.getAttribute("pass")) == null ? "" : request.getAttribute("pass")%>"><br>
+                            New Pass:<input style="margin-bottom: 20px" name="newpass" type="text" value="<%=(request.getAttribute("newpass")) == null ? "" : request.getAttribute("newpass")%>"><br>
+                            Re-pass:<input style="margin-bottom: 20px" name="repass" type="text" value="<%=(request.getAttribute("repass")) == null ? "" : request.getAttribute("repass")%>"><br>
+                            <p style="color: green"><%=(request.getAttribute("message")) == null ? "" : request.getAttribute("message")%></p>
+                            <input type="submit" value="Update">
+                        </div>
+                    </form>
+                </div>
+                <div class="cleaner"></div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

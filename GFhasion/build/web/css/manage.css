@@ -1,0 +1,187 @@
+
+/*   
+    Created on : Mar 18, 2021, 10:04:40 PM
+    Author     : Minh Thanh
+*/
+
+
+body {
+    color: #566787;
+    background: #f7f5f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+table{
+    width: 1080px;
+}
+
+
+.table-responsive {
+    margin: 30px 0;
+}
+
+.table{
+    border: 1px solid black;
+}
+.table-wrapper {
+    min-width: 1000px;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+    color: #fff;
+    background: #40b2cd;		
+    padding: 16px 25px;
+    margin: -20px -25px 10px;
+    border-radius: 3px 3px 0 0;
+}
+.table-title h2 {
+    margin: 5px 0 0;
+    font-size: 24px;
+}
+
+
+
+.table-title .add-new i {
+    margin-right: 4px;
+}
+.table-title .row .col-sm-12{
+    padding-top: 20px;
+}
+
+
+.search-box {
+    position: relative;
+    float: right;
+}
+.search-box .input-group {
+    height: 2.2em;
+    min-width: 300px;
+    position: absolute;
+    right: 0;
+}
+.search-box .input-group-addon, .search-box input {
+    border-color: #ddd;
+    border-radius: 0;
+}	
+.search-box input {
+    height: 34px;
+    padding-right: 35px;
+    background: #f4fcfd;
+    border: none;
+    border-radius: 2px !important;
+}
+.search-box input:focus {
+    background: #fff;
+}
+.search-box input::placeholder {
+    font-style: italic;
+}
+.search-box .input-group-addon {
+    min-width: 35px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    padding: 6px 0;
+}
+.search-box i {
+    color: #a0a5b1;
+    font-size: 19px;
+    position: relative;
+    top: 2px;
+}
+
+table.table {
+    table-layout: fixed;
+    margin-top: 15px;
+}
+table.table tr th, table.table tr td {
+    border-color: #e9e9e9;
+}
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+.table td, .table th{
+    vertical-align: middle;
+}
+
+/*xu ly tran text trong table*/
+.table td, .table th .over-text{
+    border: solid 1px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+table.table td a {
+    color: #a0a5b1;
+    display: inline-block;
+    margin: 0 5px;
+}
+table.table td a.view {
+    color: #03A9F4;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+
+table.table td i {
+    font-size: 19px;
+}    
+
+Modal styles 
+.modal .modal-dialog {
+    max-width: 400px;
+}
+.modal .modal-header, .modal .modal-body, .modal .modal-footer {
+    padding: 20px 30px;
+}
+.modal .modal-content {
+    border-radius: 3px;
+    font-size: 14px;
+}
+.modal .modal-footer {
+    background: #ecf0f1;
+    border-radius: 0 0 3px 3px;
+}
+.modal .modal-title {
+    display: inline-block;
+}
+.modal .form-control {
+    border-radius: 2px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+.modal textarea.form-control {
+    resize: vertical;
+}
+.modal .btn {
+    border-radius: 2px;
+    min-width: 100px;
+}	
+.modal form label {
+    font-weight: normal;
+}	
+
+.table-title .btn-add-new {
+    display: inline;
+    float: right;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.col-sm-6 {
+    /* flex: 0 0 50%; */
+    /* max-width: 50%; */
+}
